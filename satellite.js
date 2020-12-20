@@ -9,7 +9,7 @@ function renderImageToModal(imgEl) {
 function handleSatelliteImage404Error() {
     const imgEl = document.querySelector(".modal-content .image-container img");
     //FIXME: Replace this with image indicating that there is an error
-    imgEl.src = "./card1.jpg";
+    imgEl.src = "./assets/card1.jpg";
 }
 
 function createImgEl(source) {
