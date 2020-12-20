@@ -14,5 +14,3 @@ function requestSatelliteImage(city) {
 
     renderToPage(url);
 }
-
-requestSatelliteImage("seattle");

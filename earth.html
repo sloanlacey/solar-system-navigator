@@ -36,13 +36,13 @@
 </section>
 <!-- Central Earth image -->
       <div class="earth-image">
-          <img src="./earth.png">
+          <img src="./assets/earth.png">
       </div>
 <!-- Left-side cards -->
     <div class="container-1-left">
         <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="./card1.jpg">
+              <img class="activator" src="./assets/card1.jpg">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4" style="font-size: 16px">What is Earth's atmosphere made of?<i class="material-icons right">more_vert</i></span>
@@ -58,7 +58,7 @@
     <div class="container-2-left">
         <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="./card2.jpg">
+              <img class="activator" src="./assets/card2.jpg">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4" style="font-size: 16px">How old is planet Earth?<i class="material-icons right">more_vert</i></span>
@@ -78,7 +78,7 @@
               <span class="card-title">Satellite Images</span>
               <p style="padding: 5px">To get an aerial image of your location from a satellite orbiting Earth, type in your city.</p>
               <input class="satellite" type="text" style="border: 1px solid #1b5e20; border-radius: 10px; background-color: whitesmoke;">
-              <a class="waves-effect waves-light btn-small blue darken-4">Generate Image</a>
+              <a class="waves-effect waves-light btn-small blue darken-4 btn modal-trigger" href="#modal1">Generate Image</a>
             </div>
           </div>
       </div>
@@ -90,11 +90,20 @@
             <div class="card-content white-text">
               <span class="card-title">Weather</span>
               <p style="padding: 5px">What are the weather conditions on Earth in your location? Type in your city to find out!</p>
-              <input class="satellite" type="text" style="border: 1px solid #1b5e20; border-radius: 10px; background-color: whitesmoke;">
+              <input class="weather" type="text" style="border: 1px solid #1b5e20; border-radius: 10px; background-color: whitesmoke;">
               <a class="waves-effect waves-light btn-small blue darken-4">Get Forecast</a>
             </div>
           </div>
       </div>
+</div>
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Satellite Image</h4>
+    <div class="image-container"></div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Exit</a>
+  </div>
 </div>
 
 
@@ -104,10 +113,8 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
-    <script>
-        $(document).ready(function() {
-        $('.sidenav').sidenav();
-        });
-    </script>
+    <script src="cities.js"></script>
+    <script src="config.js"></script>
+    <script src="satellite.js"></script>
 </body>
 </html>
