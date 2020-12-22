@@ -91,7 +91,7 @@
               <span class="card-title">Weather</span>
               <p style="padding: 5px">What are the weather conditions on Earth in your location? Type in your city to find out!</p>
               <input class="weather" type="text" style="border: 1px solid #1b5e20; border-radius: 10px; background-color: whitesmoke;">
-              <a class="waves-effect waves-light btn-small blue darken-4">Get Forecast</a>
+              <a id = "forecast-button" class="waves-effect waves-light btn-small blue darken-4 modal-trigger" href="#modal2">Get Forecast</a>
             </div>
           </div>
       </div>
@@ -100,6 +100,16 @@
   <div class="modal-content">
     <h4>Satellite Image</h4>
     <div class="image-container"></div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Exit</a>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content2">
+    <h4>Weather Forecast</h4>
+    <div class="weather-container"></div>
   </div>
   <div class="modal-footer">
     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Exit</a>
@@ -116,5 +126,6 @@
     <script src="cities.js"></script>
     <script src="config.js"></script>
     <script src="satellite.js"></script>
+    <script src="./weather.js"></script>
 </body>
 </html>
