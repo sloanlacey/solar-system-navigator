@@ -1,0 +1,45 @@
+
+body {
+    background-image: url('./assets/newbackground.jpg');
+}
+
+
+.sun {
+    WIDTH: 50PX;
+}
+.merc {
+    WIDTH: 50PX;
+}
+.venus {
+    WIDTH: 50PX;
+}
+.earth {
+    WIDTH: 50PX;
+}
+.moon {
+    WIDTH: 50PX;
+}
+.mars {
+    WIDTH: 50PX;
+}
+.jup {
+    WIDTH: 50PX;
+}
+.sat {
+    WIDTH: 70PX;
+}
+.ura {
+    WIDTH: 50PX;
+}
+.nep {
+    WIDTH: 50PX;
+}
+
+
+input {
+    border: 1px solid darkblue;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
