@@ -1,35 +1,36 @@
-function renderImageToModal(imgEl) {
-    const imageContainer = document.querySelector(".modal-content .image-container");
-    while (imageContainer.hasChildNodes()){
-        imageContainer.removeChild(imageContainer.firstChild);
-    }
-    imageContainer.append(imgEl);
-}
-
 function handleSatelliteImage404Error() {
-    const imgEl = document.querySelector(".modal-content .image-container img");
-    //FIXME: Replace this with image indicating that there is an error
-    imgEl.src = "./assets/card1.jpg";
+    $(".modal-content").html(`
+        <i class="material-icons">highlight_off</i> Satellite Image Not Found
+    `);
 }
 
 function createImgEl(source) {
-    let imgEl = document.createElement("img");
-    imgEl.setAttribute("width", "400px");
-    imgEl.setAttribute("height", "400px");
-    imgEl.setAttribute("onerror", "handleSatelliteImage404Error()");
-    imgEl.src = source;
-
-    return imgEl;
+    let html;
+    if (!source) {
+        html = `
+            <i class="material-icons">
+                highlight_off
+            </i> City Not Found`;
+    } else {
+        html = `
+            <img
+                width="400px"
+                height="400px"
+                onerror="handleSatelliteImage404Error()"
+                src="${source}"
+            />    
+        `
+    };
+    return html;
 }
 
 function constructSatelliteURL(city) {
     const endpoint = "https://api.nasa.gov/planetary/earth/imagery";
     const cityName  = city.toLowerCase().trim();
     const position = cities[cityName];
-    // FIXME: Ask user to type in a valid city name
     if (!position) return;
     
-    const url = `${endpoint}?lon=${position.lon}&lat=${position.lat}&dim=0.15&api_key=${config.key}`;
+    const url = `${endpoint}?lon=${position.lon}&lat=${position.lat}&dim=0.15&api_key=${config.nasaKey}`;
     return url;
 }
 
@@ -39,17 +40,11 @@ function createSatelliteImage(cityName){
     return imageEl;
 }
 
-document.querySelector(".modal-trigger").addEventListener("click", () => {
+document.getElementById("satellite-button").addEventListener("click", () => {
     // Getting city name from user input
     const satelliteInput = document.querySelector(".satellite");
     
-    const modal = document.querySelector(".modal");
     const content = createSatelliteImage(satelliteInput.value);
-    renderImageToModal(content);
+    renderToModal(content);
 
-    M.Modal.init(modal, {});
 })
-
-$(document).ready(function() {
-    $('.sidenav').sidenav();
-});
