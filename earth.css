@@ -6,15 +6,34 @@ body {
     background-image: url('./assets/newbackground.jpg');
 }
 
-.earth-image {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.nav-fixed {
+    background-color: #023059;
+}
+
+#earth-images {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.api-card {
+    background-color: #025951;
+}
+
+#weather-button {
+    background-color: #020873;  
+}
+
+#forecast-button {
+    background-color: #020873;
 }
 
 input {
     border: 1px solid darkblue;
+}
+
+.planet-button {
+    text-align: center;
 }
 
 

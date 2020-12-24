@@ -14,7 +14,7 @@
 <!-- Navigation Bar -->
     <div class="navbar">
         <nav class="nav-fixed">
-                <div class="nav-wrapper blue darken-4">
+                <div class="nav-wrapper">
                   <a href="#!" class="brand-logo"><i class="material-icons white-text" style="font-size: 50px">language</i></a>
                   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
                   <ul class="right hide-on-med-and-down">
@@ -23,8 +23,8 @@
                     <li><a class="white-text" href="https://www.nasa.gov/">NASA</a></li>
                     <li><a class="white-text" href="https://www.noaa.gov/">NOAA</a></li>
                   </ul>
-                </div>
         </nav>
+  </div>
     <!-- For collapsible/small screen drop down -->
     <ul class="sidenav" id="mobile-demo">
         <li><a href="#">Home</a></li>
@@ -33,16 +33,12 @@
         <li><a href="https://www.noaa.gov/">NOAA</a></li>
       </ul>
     </div>
-<!-- Central Earth image -->
-<div class="earth-image">
-    <img src="./assets/earth.png">
-</div>
  <!-- Main container starts here -->
 <div class="container">
 <!-- Top cards -->
     <div class="row">
         <div class="col s12 m12 l4">
-            <div class="card">
+            <div class="card" style="margin-top: 25px;">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img class="activator" src="./assets/card1.jpg">
                 </div>
@@ -57,15 +53,18 @@
             </div>
         </div>
 <!-- empty spacing column -->
-        <div class="col s12 m0 l4"></div>
+        <div id="earth-images" class="col s12 m12 l4">
+          <img src="./assets/earth.png">
+        </div>
 
         <div class="col s12 m12 l4">
-            <div class="card green darken-3">
+            <div class="card api-card" style="margin-top: 25px;">
                 <div class="card-content">
                   <span class="card-title white-text">Satellite Images</span>
-                  <p class="white-text" style="padding: 5px">To get an aerial image of your location from a satellite orbiting Earth, type in your city.</p>
+                  <p class="white-text" style="padding: 5px">Where on Earth are you right now?</p>
+                  <p class="white-text" style="padding: 5px">Enter your city name to see an aerial view of your location from a satellite orbiting Earth.</p>
                   <input class="satellite" type="text" style="border: 1px solid #1b5e20; border-radius: 10px; background-color: whitesmoke;">
-                  <a class="waves-effect waves-light btn-small blue darken-4 btn modal-trigger" href="#modal1">Generate Image</a>
+                  <a id="weather-button" class="waves-effect waves-light btn-small modal-trigger" href="#modal1">Generate Image</a>
                 </div>
               </div>
         </div>
@@ -73,7 +72,7 @@
 <!-- Bottom cards -->
     <div class="row">
         <div class="col s12 m12 l4">
-            <div class="card">
+            <div class="card" style="margin-top: 25px;">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img class="activator" src="./assets/card2.jpg">
                 </div>
@@ -88,18 +87,31 @@
             </div>
         </div>
 <!-- Empty space column -->
-        <div id="moon-images" class="col s12 l4"></div>
+        <div id="earth-images" class="col s12 m12 l4">
+          <img src="./assets/darkearth.png">
+        </div>
 
         <div class="col s12 m12 l4">
-            <div class="card green darken-3">
+            <div class="card api-card" style="margin-top: 25px;">
                 <div class="card-content white-text">
                   <span class="card-title white-text">Weather</span>
                   <p class="white-text" style="padding: 5px">What are the weather conditions on Earth in your location? Type in your city to find out!</p>
                   <input class="weather" type="text" style="border: 1px solid #1b5e20; border-radius: 10px; background-color: whitesmoke;">
-                  <a id="forecast-button" class="waves-effect waves-light btn-small white-text blue darken-4 modal-trigger" href="#modal2">Get Forecast</a>
+                  <a id="forecast-button" class="waves-effect waves-light btn-small white-text modal-trigger" href="#modal2">Get Forecast</a>
                 </div>
               </div>
         </div>
+<div class="row">
+    <div class="col s4 m4 l4 planet-button">
+      <input type="image" name="go-to-venus" src="./assets/venus-button.png" alt="Go to Venus" style="border: 1px solid black">
+    </div>
+    <div class="col s4 m4 l4 planet-button">
+      <input id="moon-button" type="image" name="go-to-the-moon" src="./assets/moon-button.png" alt="Go to the Moon" title="Go to the Moon" style="border: 1px solid black">
+    </div>
+    <div class="col s4 m4 l4 planet-button">
+      <input type="image" name="go-to-mars" src="./assets/mars-button.png" alt="Go to Mars" style="border: 1px solid black">
+    </div>
+</div>
     </div>
 
 <div id="modal1" class="modal">
@@ -137,6 +149,7 @@
     <script src="./cities.js"></script>
     <script src="./config.js"></script>
     <script src="./satellite.js"></script>
-    <script src="./weather.js"></script>       
+    <script src="./weather.js"></script>  
+    <script src="./planetbuttons.js"></script>     
 </body>
 </html>
