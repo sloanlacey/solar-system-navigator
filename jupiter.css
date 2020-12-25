@@ -1,0 +1,38 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('./assets/newbackground.jpg');
+}
+
+.nav-fixed {
+    background-color: #8C897B;
+}
+
+#jupiter-images {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.api-card {
+    background-color: #260801;
+    border: 1px solid #402222;
+}
+
+#jupiter-api-button {
+    background-color: #8C4E03;
+    color: black;
+    margin-top: 10px;
+}
+
+#wiki-button {
+    background-color: #8C4E03;
+    color: black;
+    margin-top: 10px;
+}
+
+.planet-button {
+    text-align: center;
+}

@@ -7,21 +7,21 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
-    <link rel="stylesheet" type="text/css" href="./earth.css">    
-    <title>Earth</title>
+    <link rel="stylesheet" type="text/css" href="./mars.css">    
+    <title>Mars</title>
 </head>
 <body>
 <!-- Navigation Bar -->
     <div class="navbar">
         <nav class="nav-fixed">
                 <div class="nav-wrapper">
-                  <a href="#!" class="brand-logo"><i class="material-icons white-text" style="font-size: 50px">language</i></a>
-                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
+                  <a href="#!" class="brand-logo"><i class="material-icons" style="font-size: 50px; color: #ffffe0;">language</i></a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color: #ffffe0;">menu</i></a>
                   <ul class="right hide-on-med-and-down">
-                    <li><a class="white-text" href="#">Home</a></li>
-                    <li><a class="white-text" href="#">Explore the Planets</a></li>
-                    <li><a class="white-text" href="https://www.nasa.gov/">NASA</a></li>
-                    <li><a class="white-text" href="https://www.noaa.gov/">NOAA</a></li>
+                    <li><a style="color: #ffffe0;" href="#">Home</a></li>
+                    <li><a style="color: #ffffe0;" href="#">Explore the Planets</a></li>
+                    <li><a style="color: #ffffe0;" href="https://www.nasa.gov/">NASA</a></li>
+                    <li><a style="color: #ffffe0;" href="https://www.noaa.gov/">NOAA</a></li>
                   </ul>
         </nav>
   </div>
@@ -40,31 +40,32 @@
         <div class="col s12 m12 l4">
             <div class="card" style="margin-top: 25px;">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="./assets/card1.jpg">
+                  <img class="activator" src="./assets/olympusmons.jpg">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4" style="font-size: 16px">What is Earth's atmosphere made of?<i class="material-icons right">more_vert</i></span>
-                  <p><a href="https://www.nasa.gov/mission_pages/sunearth/science/atmosphere-layers2.html">Atmosphere: NASA</a></p>
+                  <span class="card-title activator grey-text text-darken-4" style="font-size: 16px">How big is the largest volcano in our solar system?<i class="material-icons right">more_vert</i></span>
+                  <p><a href="https://mars.nasa.gov/gallery/atlas/olympus-mons.html">Mars: NASA</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Hint: A lot of gas!<i class="material-icons right">close</i></span>
-                  <p>Earth's atmosphere is made up of roughly 78% nitrogen, 21% oxygen, and small amounts of other gases such as carbon dioxide, neon, and hydrogen.</p>
+                  <span class="card-title grey-text text-darken-4">Hint: it's huge!<i class="material-icons right">close</i></span>
+                  <p>Olympus Mons, a shield volcano, is located in the Tharsis Montes region of mars and is the largest volcano in our solar system. It has a diameter roughly the size of the state of Arizona, and is 16 miles high. Compared to Mt. Everest here on Earth, Olympus Mons is roughly two and a half times as large.</p>
                   </div>
             </div>
         </div>
 <!-- empty spacing column -->
-        <div id="earth-images" class="col s12 m12 l4">
-          <img src="./assets/earth.png">
+        <div id="mars-images" class="col s12 m12 l4">
+          <img src="./assets/mainmars.png">
         </div>
 
         <div class="col s12 m12 l4">
             <div class="card api-card" style="margin-top: 25px;">
                 <div class="card-content">
-                  <span class="card-title white-text">Satellite Images</span>
-                  <p class="white-text" style="padding: 5px">Where on Earth are you right now?</p>
-                  <p class="white-text" style="padding: 5px">Enter your city name to see an aerial view of your location from a satellite orbiting Earth.</p>
-                  <input class="satellite" type="text" style="border: 1px solid #1b5e20; border-radius: 10px; background-color: whitesmoke;">
-                  <a id="satellite-button" class="waves-effect waves-light btn-small btn modal-trigger" href="#modal1">Generate Image</a>
+                  <span class="card-title" style="color: #ffffe0;">A Martian Sol</span>
+                  <p style="color: #ffffe0; padding: 10px">A day on Mars is called a Sol. What Sol is it, and what is the temperature?</p>
+                  
+                  <p style="color: #ffffe0; padding: 10px">Click the button below to see!</p>
+                  <!-- Mars API button -->
+                  <a id="mars-api-button" class="waves-effect waves-light btn-small btn modal-trigger" href="#modal1">Sol Data</a>
                 </div>
               </div>
         </div>
@@ -74,45 +75,45 @@
         <div class="col s12 m12 l4">
             <div class="card" style="margin-top: 25px;">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="./assets/card2.jpg">
+                  <img class="activator" src="./assets/marsice.jpg">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4" style="font-size: 16px">How old is planet Earth?<i class="material-icons right">more_vert</i></span>
-                  <p><a href="https://astrobiology.nasa.gov/news/the-measure-of-deep-time/">Deep Time: NASA</a></p>
+                  <span class="card-title activator grey-text text-darken-4" style="font-size: 16px">Is there water on Mars?<i class="material-icons right">more_vert</i></span>
+                  <p><a href="https://www.nasa.gov/feature/jpl/nasas-treasure-map-for-water-ice-on-mars">Water on Mars: NASA</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Really, really old!<i class="material-icons right">close</i></span>
-                  <p>Earth is roughly 4.5 billion years old, plus or minus about 50 million years. The age is determined by radiometrically dating the oldest rocks we can find.</p>
+                  <span class="card-title grey-text text-darken-4">Yes--as ice!<i class="material-icons right">close</i></span>
+                  <p>Almost all of the water on Mars exists as ice, and a tiny percentage as water vapor in Mars' atmosphere. A massive quantity of water ice also exists beneath a permanent carbon dioxide ice cap at the Martian south pole. Liquid water has yet to be discovered on Mars, but it may have been present closer to when Mars first formed.</p>
                   </div>
             </div>
         </div>
 <!-- Empty space column -->
-        <div id="earth-images" class="col s12 m12 l4">
-          <img src="./assets/darkearth.png">
+        <div id="mars-images" class="col s12 m12 l4">
+          <img src="./assets/darkmars.png">
         </div>
 
         <div class="col s12 m12 l4">
             <div class="card api-card" style="margin-top: 25px;">
                 <div class="card-content white-text">
-                  <span class="card-title white-text">Weather</span>
-                  <p class="white-text" style="padding: 5px">What are the weather conditions on Earth in your location? Type in your city to find out!</p>
-                  <input class="weather" type="text" style="border: 1px solid #1b5e20; border-radius: 10px; background-color: whitesmoke;">
-                  <a id="forecast-button" class="waves-effect waves-light btn-small white-text modal-trigger" href="#modal1">Get Forecast</a>
+                  <span class="card-title" style="color: #ffffe0;">Do you want to find more information about Mars?</span>
+                  <p style="padding: 5px; color: #ffffe0;">Click the button to reveal Martian facts.</p>
+                  <!-- Wiki link button -->
+                  <a id="wiki-button" class="waves-effect waves-light btn-small modal-trigger" href="#modal1">More on Mars</a>
                 </div>
               </div>
         </div>
-<div class="row">
+
+        
+    <div class="row">
     <div class="col s4 m4 l4 planet-button">
-      <input type="image" name="go-to-venus" src="./assets/venus-button.png" alt="Venus Button" style="border: 1px solid black">
+      <input id="earth-button" type="image" name="go-to-earth" src="./assets/earth-button.png" alt="Go to Earth" title="Go to Earth" style="border: 1px solid black">
     </div>
+    <div class="col s4 m4 l4 planet-button"></div>
     <div class="col s4 m4 l4 planet-button">
-      <input id="moon-button" type="image" name="go-to-the-moon" src="./assets/moon-button.png" alt="Moon Button" title="Go to the Moon" style="border: 1px solid black">
+      <input id="jupiter-button" type="image" name="go-to-jupiter" src="./assets/jupiter-button.png" alt="Go to Jupiter" title="Go to Jupiter" style="border: 1px solid black"> 
     </div>
-    <div class="col s4 m4 l4 planet-button">
-      <input id="mars-button" type="image" name="go-to-mars" src="./assets/mars-button.png" alt="Mars Button" title="Go to Mars" style="border: 1px solid black">
-    </div>
-</div>
-    </div>
+    </div>      
+
 
 <div id="modal1" class="modal">
   <div class="modal-content">
@@ -122,6 +123,7 @@
   <div class="modal-footer">
     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Exit</a>
   </div>
+
 </div>
 
 <!-- <div id="modal2" class="modal">
