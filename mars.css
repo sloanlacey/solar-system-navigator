@@ -1,0 +1,38 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('./assets/newbackground.jpg');
+}
+
+.nav-fixed {
+    background-color: #400101;
+}
+
+#mars-images {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.api-card {
+    background-color: #8C4E37;
+}
+
+#mars-api-button {
+    background-color: #F2AE72;
+    color: #402222;
+    margin-top: 10px;
+}
+
+#wiki-button {
+    background-color: #F2AE72;
+    color: #402222;
+    margin-top: 10px;
+}
+
+.planet-button {
+    text-align: center;
+}
+
