@@ -75,27 +75,15 @@
     <div class="row">
           <div class="card green darken-3">
             <div class="card-content white-text">
-              <span class="card-title">Satellite Images</span>
-              <p style="padding: 5px">To get an aerial image of your location from a satellite orbiting Earth, type in your city.</p>
-              <input class="satellite" type="text" style="border: 1px solid #1b5e20; border-radius: 10px; background-color: whitesmoke;">
-              <a class="waves-effect waves-light btn-small blue darken-4 btn modal-trigger" href="#modal1">Generate Image</a>
+              <span class="card-title">Wiki Info</span>
+              <p style="padding: 5px">To get info from Wiki, click Get Wiki.</p>
+              <a class="waves-effect waves-light btn-small blue darken-4 btn modal-trigger" href="#modal1">Get Wiki</a>
             </div>
           </div>
       </div>
 </div>
 <br>
-<div class="container-4-right">
-    <div class="row">
-          <div class="card green darken-3">
-            <div class="card-content white-text">
-              <span class="card-title">Weather</span>
-              <p style="padding: 5px">What are the weather conditions on Earth in your location? Type in your city to find out!</p>
-              <input class="weather" type="text" style="border: 1px solid #1b5e20; border-radius: 10px; background-color: whitesmoke;">
-              <a id = "forecast-button" class="waves-effect waves-light btn-small blue darken-4 modal-trigger" href="#modal2">Get Forecast</a>
-            </div>
-          </div>
-      </div>
-</div>
+
 <div id="modal1" class="modal">
   <div class="modal-content">
     <h4>Wiki Info</h4>
@@ -116,16 +104,11 @@
   </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!-- Materialize JS CDN -->
-    <!-- <script type="text/javascript" src="./index.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
-    <script src="cities.js"></script>
-    <script src="config.js"></script>
-    <script src="earth2.js"></script>
-    <script src="./weather.js"></script>
+<script src="./config.js"></script>
+<script src="./wikiApiSample.js"></script>
 </body>
 </html>
