@@ -27,6 +27,7 @@ function wikiAPIHandler(data){
     renderInfoToModal(htmlData);
 }
 
+
 function constructSatelliteURL() {
     const url = "https://en.wikipedia.org/w/api.php?action=query&titles=earth&prop=extracts&format=json&origin=*";
     // const cityName  = city.toLowerCase().trim();
