@@ -12,7 +12,13 @@ function renderToModal(htmlEl, title="") {
     $(".modal").modal("open");
 }
 
-
+function getPreloader(){
+    return `
+    <div class="progress">
+        <div class="indeterminate"></div>
+    </div>
+    `;
+}
 $(document).ready(function() {
     $('.sidenav').sidenav();
 });
