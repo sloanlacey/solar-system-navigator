@@ -1,28 +1,26 @@
-function renderInfoToModal(htmlEl) {
-    $(".modal-content .wiki-container").html(htmlEl);
-}
-function shortenHtmlData(htmlData) {
-    const headerTagAt = /(<h)[0-9](>)/g;
+function shortenWikiHtmlData(htmlData) {
+    const headerTagAt = /<h[0-9]>/g;
     const hTagIndex = htmlData.search(headerTagAt);
     return htmlData.substring(0, hTagIndex);
 }
 
-function wikiAPIHandler(data){
+function wikiAPIHandler(data, subject){
     const key = Object.keys(data.query.pages);
     const htmlData = data.query.pages[key[0]].extract;
-    const shorten = shortenHtmlData(htmlData);
-    renderInfoToModal(shorten);
+    const wikiData = shortenWikiHtmlData(htmlData);
+    const title = subject.replace(subject.charAt(0), subject.charAt(0).toUpperCase());
+    renderToModal(wikiData, title);
 }
 
-function startWikiAjax() {
-    const url = "https://en.wikipedia.org/w/api.php?action=query&titles=earth&prop=extracts&format=json&origin=*";
+function startWikiAjax(subject) {
+    const url = `https://en.wikipedia.org/w/api.php?action=query&titles=${subject}&prop=extracts&format=json&origin=*`;
     
     function makeRequest() {
         const httpRequest = new XMLHttpRequest();
 
         httpRequest.onreadystatechange = function(){
             if (httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status === 200){
-                wikiAPIHandler(JSON.parse(httpRequest.responseText));
+                wikiAPIHandler(JSON.parse(httpRequest.responseText), subject);
             } 
         };
         httpRequest.open('GET', url);
@@ -31,8 +29,7 @@ function startWikiAjax() {
     makeRequest();
 }
 
-document.querySelector(".modal-trigger").addEventListener("click", () => {    
-    const modal = document.querySelector(".modal");
-    startWikiAjax();
-    M.Modal.init(modal, {});
+document.getElementById("wiki-button").addEventListener("click", () => {    
+    startWikiAjax("earth");
+    renderToModal(getPreloader());
 })
