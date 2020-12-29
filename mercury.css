@@ -7,29 +7,29 @@ body {
 }
 
 .nav-fixed {
-    background-color: #260801;
+    background-color: #8C8C8C;
 }
 
-#jupiter-images {
+#mercury-images {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
 .api-card {
-    background-color: #8C897B;
-    border: 1px solid #402222;
+    background-color: #495773;
+    /* border: 1px solid #402222; */
 }
 
-#jupiter-api-button {
-    background-color: #8C4E03;
-    color: black;
+/* #mercury-api-button {
+    background-color: #736453;
+    color: #f5f5f5;
     margin-top: 10px;
-}
+} */
 
 #wiki-button {
-    background-color: #8C4E03;
-    color: black;
+    background-color: #736453;
+    color: #f5f5f5;
     margin-top: 10px;
 }
 
