@@ -32,14 +32,12 @@ function displayMoonResponse(response) {
     return html;
 }
 
-
 document.querySelector(".modal-trigger").addEventListener("click", () => {
     // const satelliteInput = document.querySelector(".satellite");
     const modal = document.querySelector(".modal");
     constructMoonURL();
     M.Modal.init(modal, {});
 })
-
 
 $(document).ready(function () {
     $('.sidenav').sidenav();
