@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialize CSS CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+    <link rel="stylesheet" type="text/css" href="./neptune.css">    
+    <title>Neptune</title>
+</head>
+<body>
+<!-- Navigation Bar -->
+    <div class="navbar">
+        <nav class="nav-fixed">
+                <div class="nav-wrapper">
+                  <a href="#!" class="brand-logo"><i class="material-icons" style="font-size: 50px; color: #0f0f09;">language</i></a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color: #0f0f09;">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a style="color: #0f0f09;" href="#">Home</a></li>
+                    <li><a style="color: #0f0f09;" href="#">Explore the Planets</a></li>
+                    <li><a style="color: #0f0f09;" href="https://www.nasa.gov/">NASA</a></li>
+                    <li><a style="color: #0f0f09;" href="https://www.noaa.gov/">NOAA</a></li>
+                  </ul>
+        </nav>
+  </div>
+    <!-- For collapsible/small screen drop down -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore the Planets</a></li>
+        <li><a href="https://www.nasa.gov/">NASA</a></li>
+        <li><a href="https://www.noaa.gov/">NOAA</a></li>
+      </ul>
+    </div>
+ <!-- Main container starts here -->
+<div class="container">
+<!-- Top cards -->
+    <div class="row">
+        <div class="col s12 m12 l4">
+            <div class="card" style="margin-top: 25px;">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./assets/methanebubbles.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4" style="font-size: 16px">Is Neptune's ice like ours?<i class="material-icons right">more_vert</i></span>
+                  <p><a href="https://solarsystem.nasa.gov/planets/neptune/in-depth/#otp_structure">"Icy" Neptune: NASA</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">There is ice, but it's different from ice on Earth.<i class="material-icons right">close</i></span>
+                  <p>Neptune is one of the four giant planets in our solar system, and it is one of only two Ice Giants (the other is its neighbor Uranus). In planetary science, the term "ice" refers to volatile chemical compounds with freezing points above 100 Kelvin (about -280 degrees Fahrenheit). There is a small amount of water ice on Neptune, but the majority of its ice is in the form of methane and ammonia. Its surface is a layer of hot, dense fluid with icy clouds all wrapped around smaller, rocky core. Scientists speculate that beneath the icy clouds is an ocean of extremely hot water.</p>
+                  </div>
+            </div>
+        </div>
+<!-- empty spacing column -->
+        <div id="neptune-images" class="col s12 m12 l4">
+          <img src="./assets/mainneptune.png">
+        </div>
+
+        <div class="col s12 m12 l4">
+            <div class="card api-card" style="margin-top: 25px;">
+                <div class="card-content">
+                  <span class="card-title" style="color: #0f0f09;">Neptune at a Glance</span>
+                  <ul>
+                  <li style="color: #0f0f09; list-style-type: circle;">Mass: 1.024 x 10^26 kg</li>
+                  <li style="color: #0f0f09; list-style-type: circle;">Orbital Period: 165 Earth years</li>
+                  <li style="color: #0f0f09; list-style-type: circle;">Average distance from Earth: 2.7 billion miles</li>
+                  <li style="color: #0f0f09; list-style-type: circle;">Distance from the Sun: 2.8 billion miles</li>
+                  </ul>
+                  <!-- Mars API button -->
+                  <!-- <a id="jupiter-api-button" class="waves-effect waves-light btn-small btn modal-trigger" href="#modal1">Sol Data</a> -->
+                </div>
+              </div>
+        </div>
+    </div>
+<!-- Bottom cards -->
+    <div class="row">
+        <div class="col s12 m12 l4">
+            <div class="card" style="margin-top: 25px;">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./assets/neptunewinds.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4" style="font-size: 16px">Extreme Neptune Winds<i class="material-icons right">more_vert</i></span>
+                  <p><a href="https://solarsystem.nasa.gov/planets/neptune/in-depth/#otp_atmosphere">Neptune's Winds: NASA</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Neptune's winds are 9 times as strong as the winds on Earth.<i class="material-icons right">close</i></span>
+                  <p>Yep, you read that right. The wind speeds on Neptune are also 3 times as fast as those on Jupiter. Despite its low energy input from the sun, Neptune is the windiest planet in our solar system with speeds of more than 1,200 miles per hour. The winds blow the clouds of frozen methane around the planet at extremely high speeds as it makes its 165 Earth-year long journey around the sun. Neptune's atmosphere, along with the small amount of methane, is made up mostly of hydrogen and helium. In comparison, Uranus has a very similar atmosphere but Neptune is a much more vivid blue. This means there is some unknown component that provides its more intense color.</p>
+                  </div>
+            </div>
+        </div>
+<!-- Empty space column -->
+        <div id="neptune-images" class="col s12 m12 l4">
+          <img src="./assets/darkneptune.png">
+        </div>
+
+        <div class="col s12 m12 l4">
+            <div class="card api-card" style="margin-top: 25px;">
+                <div class="card-content white-text">
+                  <span class="card-title" style="color:#0f0f09;">Do you want to find more information about this planet?</span>
+                  <p style="padding: 5px; color:#0f0f09;">Click the button to reveal facts about Neptune.</p>
+                  <!-- Wiki link button -->
+                  <a id="wiki-button" class="waves-effect waves-light btn-small modal-trigger" href="#modal1">Get More Info</a>
+                </div>
+              </div>
+        </div>
+        
+<div class="row">
+    <div class="col s4 m4 l4 planet-button">
+        <input id="uranus-button" type="image" name="go-to-uranus" src="./assets/uranus-button.png" alt="Uranus Button" title="Go to Uranus" style="border: 1px solid black">
+      </div>
+    <div class="col s4 m4 l4"></div>
+    <div class="col s4 m4 l4 planet-button">
+      <input id ="pluto-button" type="image" name="go-to-pluto" src="./assets/pluto-button.png" alt="Go to Pluto" title="Go to Pluto" style="border: 1px solid black">
+    </div>
+    </div>      
+</div>
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <div class="image-container"></div>
+    <div class="weather-container"></div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Exit</a>
+  </div>
+
+</div>
+
+<!-- <div id="modal2" class="modal">
+  <div class="modal-content2">
+    <h4>Weather Forecast</h4>
+    <div class="weather-container"></div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Exit</a>
+  </div>
+</div> -->
+
+</div>
+    <!-- Materialize JS CDN -->
+    <!-- <script type="text/javascript" src="./index.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+    <!-- <script>
+        $(document).ready(function() {
+        $('.sidenav').sidenav();
+        });
+    </script>      -->
+    <script src="./cities.js"></script>
+    <script src="./config.js"></script>
+    <script src="./helper.js"></script>
+    <script src="./satellite.js"></script>
+    <script src="./weather.js"></script>  
+    <script src="./planetbuttons.js"></script>     
+</body>
+</html>

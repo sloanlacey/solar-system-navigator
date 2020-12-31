@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialize CSS CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+    <link rel="stylesheet" type="text/css" href="./venus.css">    
+    <title>Venus</title>
+</head>
+<body>
+<!-- Navigation Bar -->
+    <div class="navbar">
+        <nav class="nav-fixed">
+                <div class="nav-wrapper">
+                  <a href="#!" class="brand-logo"><i class="material-icons" style="font-size: 50px; color: #010326;">language</i></a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color: #010326;">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a style="color: #010326;" href="#">Home</a></li>
+                    <li><a style="color: #010326;" href="#">Explore the Planets</a></li>
+                    <li><a style="color: #010326;" href="https://www.nasa.gov/">NASA</a></li>
+                    <li><a style="color: #010326;" href="https://www.noaa.gov/">NOAA</a></li>
+                  </ul>
+        </nav>
+  </div>
+    <!-- For collapsible/small screen drop down -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore the Planets</a></li>
+        <li><a href="https://www.nasa.gov/">NASA</a></li>
+        <li><a href="https://www.noaa.gov/">NOAA</a></li>
+      </ul>
+    </div>
+ <!-- Main container starts here -->
+<div class="container">
+<!-- Top cards -->
+    <div class="row">
+        <div class="col s12 m12 l4">
+            <div class="card" style="margin-top: 25px;">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./assets/venusatmosphere.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4" style="font-size: 16px">What is Venus' atmosphere made of?<i class="material-icons right">more_vert</i></span>
+                  <p><a href="https://solarsystem.nasa.gov/planets/venus/overview/#otp_ten_things_to_know_about_venus">Venus Overview: NASA</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Hint: it's mostly carbon dioxide.<i class="material-icons right">close</i></span>
+                  <p>Venus has a very thick and toxic atmosphere which means the planet is constantly covered in a yellowish shroud of sulfuric acid clouds. This causes a runaway greenhouse effect making Venus the hottest planet in our solar system despite not being the closest body to the sun. Its surface has an extreme pressure gradient that would be similar to the pressure felt a mile below the surface of the ocean on Earth. The atmosphere on Venus is also rotating extremely quickly while the planet is rotating much more slowly. The hurricane force winds blow the clouds all the way around the Earth sized planet every 5 days.</p>
+                  </div>
+            </div>
+        </div>
+<!-- empty spacing column -->
+        <div id="venus-images" class="col s12 m12 l4">
+          <img src="./assets/mainvenus.png">
+        </div>
+
+        <div class="col s12 m12 l4">
+            <div class="card api-card" style="margin-top: 25px;">
+                <div class="card-content">
+                  <span class="card-title" style="color:#010326;">Venus at a Glance</span>
+                  <ul>
+                  <li style="color:#010326; list-style-type: circle;">Mass: 4.867 x 10^24 kg</li>
+                  <li style="color:#010326; list-style-type: circle;">Orbital Period: 225 Earth days</li>
+                  <li style="color:#010326; list-style-type: circle;">Average distance from Earth: 25 million miles</li>
+                  <li style="color:#010326; list-style-type: circle;">Distance from the Sun: 67.279 million miles</li>
+                  </ul>
+                  <!-- Mars API button -->
+                  <!-- <a id="jupiter-api-button" class="waves-effect waves-light btn-small btn modal-trigger" href="#modal1">Sol Data</a> -->
+                </div>
+              </div>
+        </div>
+    </div>
+<!-- Bottom cards -->
+    <div class="row">
+        <div class="col s12 m12 l4">
+            <div class="card" style="margin-top: 25px;">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./assets/venussurface.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4" style="font-size: 16px">Visitors to Venus<i class="material-icons right">more_vert</i></span>
+                  <p><a href="https://solarsystem.nasa.gov/planets/venus/exploration/?page=0&per_page=10&order=launch_date+desc%2Ctitle+asc&search=&tags=Venus&category=33#ancient-observers">Venus Exploration: NASA</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Venus has been heavily explored.<i class="material-icons right">close</i></span>
+                  <p>Over 40 spacecraft have visited Venus to explore the super-hot planet. In the 90's, the Magellan mission mapped 98% of the surface of Venus, and the Akatsuki probe from Japan is currently orbiting it for exploration purposes. In our extensive studies of this planet, we have discovered that Venus periodically passes in front of the sun in a process called transit. These transits occur in pairs and are separated by over a century each time. These long spaced transit pairs help us to study Venus and its place in the solar system.</p>
+                  </div>
+            </div>
+        </div>
+<!-- Empty space column -->
+        <div id="venus-images" class="col s12 m12 l4">
+          <img src="./assets/darkvenus.png">
+        </div>
+
+        <div class="col s12 m12 l4">
+            <div class="card api-card" style="margin-top: 25px;">
+                <div class="card-content white-text">
+                  <span class="card-title" style="color:#010326;">Do you want to find more information about this planet?</span>
+                  <p style="padding: 5px; color:#010326;">Click the button to reveal facts about Venus.</p>
+                  <!-- Wiki link button -->
+                  <a id="wiki-button" class="waves-effect waves-light btn-small modal-trigger" href="#modal1">Get More Info</a>
+                </div>
+              </div>
+        </div>
+        
+<div class="row">
+    <div class="col s4 m4 l4 planet-button">
+        <input id="mercury-button" type="image" name="go-to-mercury" src="./assets/mercury-button.png" alt="Mercury Button" title="Go to Mercury" style="border: 1px solid black">
+      </div>
+    <div class="col s4 m4 l4"></div>
+    <div class="col s4 m4 l4 planet-button">
+      <input id ="earth-button" type="image" name="go-to-earth" src="./assets/earth-button.png" alt="Go to Earth" title="Go to Earth" style="border: 1px solid black">
+    </div>
+    </div>      
+</div>
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <div class="image-container"></div>
+    <div class="weather-container"></div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Exit</a>
+  </div>
+
+</div>
+
+<!-- <div id="modal2" class="modal">
+  <div class="modal-content2">
+    <h4>Weather Forecast</h4>
+    <div class="weather-container"></div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Exit</a>
+  </div>
+</div> -->
+
+</div>
+    <!-- Materialize JS CDN -->
+    <!-- <script type="text/javascript" src="./index.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+    <!-- <script>
+        $(document).ready(function() {
+        $('.sidenav').sidenav();
+        });
+    </script>      -->
+    <script src="./cities.js"></script>
+    <script src="./config.js"></script>
+    <script src="./helper.js"></script>
+    <script src="./satellite.js"></script>
+    <script src="./weather.js"></script>  
+    <script src="./planetbuttons.js"></script>     
+</body>
+</html>
