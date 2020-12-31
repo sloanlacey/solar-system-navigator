@@ -7,27 +7,31 @@ body {
 }
 
 .nav-fixed {
-    background-color: #A4A5A6;
+    background-color: #324FA6;
 }
 
-#moon-images {
+#neptune-images {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
 .api-card {
-    background-color: #727273;
+    background-color: #447EF2;
+    /* border: 1px solid #402222; */
 }
 
-#satellite-button {
-    margin-top: 15px;
-    background-color: #D9D9D9;
-}
-
-/* #weather-button {
-    background-color: #D9D9D9;
+/* #mercury-api-button {
+    background-color: #736453;
+    color: #f5f5f5;
+    margin-top: 10px;
 } */
+
+#wiki-button {
+    background-color: #202959;
+    color: #f5f5f5;
+    margin-top: 10px;
+}
 
 .planet-button {
     text-align: center;
