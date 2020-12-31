@@ -30,6 +30,6 @@ function startWikiAjax(subject) {
 }
 
 document.getElementById("wiki-button").addEventListener("click", () => {    
-    startWikiAjax("earth");
+    startWikiAjax("sun");
     renderToModal(getPreloader());
 })
