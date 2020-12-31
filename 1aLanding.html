@@ -1,87 +1,133 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="test.css"  media="screen,projection"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Materialize CSS CDN -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
-    <link rel="stylesheet" type="text/css" href="./1alanding.css">   
-    <title>Earth</title>
+  <title>Solar System Navigator</title>
 </head>
 <body>
-<!-- Navigation Bar -->
-<div class="navbar">
-  <nav class="nav-fixed">
-          <div class="nav-wrapper">
-            <a href="#!" class="brand-logo"><i class="material-icons white-text" style="font-size: 50px">language</i></a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a class="white-text" href="#">Home</a></li>
-              <li><a class="white-text" href="#">Explore the Planets</a></li>
-              <li><a class="white-text" href="https://www.nasa.gov/">NASA</a></li>
-              <li><a class="white-text" href="https://www.noaa.gov/">NOAA</a></li>
-            </ul>
-  </nav>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <nav class="nav-fixed">
+            <div class="nav-wrapper">
+              <a href="#!" class="brand-logo"><i class="material-icons" style="font-size: 50px; color: #F2EAD0;">language</i></a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color: #F2EAD0;">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a style="color: #F2EAD0;" href="#">Home</a></li>
+                <li><a style="color: #F2EAD0;" href="#">Explore the Planets</a></li>
+                <li><a style="color: #F2EAD0;" href="https://www.nasa.gov/">NASA</a></li>
+                <li><a style="color: #F2EAD0;" href="https://www.noaa.gov/">NOAA</a></li>
+              </ul>
+    </nav>
 </div>
-<div class="container">
-  <div class="row">
-    <div class="col s12 m1 l1">
-      <img class="sun" src="./assets/planet-star-img/0sun.png">
-    </div>
-    <div class="col s12 m1 l1">
-      <img class="merc" src="./assets/planet-star-img/1merc1.png">
-    </div>
-    <div class="col s12 m1 l1">
-      <img class="venus" src="./assets/planet-star-img/2venus1.png">
-    </div>
-    <div class="col s12 m1 l1">
-      <img class="earth" src="./assets/earth.png">
-    </div>
-    <div class="col s12 m1 l1">
-      <img class="moon" src="./assets/moon.png">
-    </div>
-    <div class="col s12 m1 l1">
-      <img class="mars" src="./assets/planet-star-img/4mars1.png">
-    </div>
-    <div class="col s12 m1 l1">
-      <img class="jup" src="./assets/planet-star-img/5jup1.png">
-    </div>
-    <div class="col s12 m1 l1">
-      <img class="sat" src="./assets/planet-star-img/6saturn1.png">
-    </div>
-    <div class="col s12 m1 l1">
-      <img class="ura" src="./assets/planet-star-img/7ura1.png">
-    </div>
-    <div class="col s12 m1 l1">
-      <img class="nep" src="./assets/planet-star-img/8nep1.png">
-    </div>
-  </div>
-    
-  </div>
-
-<!-- Central Earth image -->
-<!-- <div class="row">
-      <div class="earth-image">
-          <img src="./assets/earth.png">
+<!-- For collapsible/small screen drop down -->
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Explore the Planets</a></li>
+    <li><a href="https://www.nasa.gov/">NASA</a></li>
+    <li><a href="https://www.noaa.gov/">NOAA</a></li>
+  </ul>
+</div>
+  <div class="carousel carousel-slider center">
+    <div class="carousel-item red white-text" href="#one!">
+      <img src="./assets/landingpageimg/sunimg.jpg">
+      <h2>First Panel</h2>
+      <p class="white-text">This is your first panel</p>
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">sun</a>
       </div>
-
-      <div class="merc-image">
-        <img src="./assets/planet-star-img/1merc1.png">
-
     </div>
+    <div class="carousel-item amber white-text" href="#two!">
+      <img src="./assets/landingpageimg/mercimg.jpg">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">mercury</a>
+      </div>
+    </div>
+    <div class="carousel-item green white-text" href="#three!">
+      <img src="./assets/landingpageimg/venusimg.jpg">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">venus</a>
+      </div>
+    </div>
+    <div class="carousel-item green white-text" href="#four!">
+      <img src="./assets/landingpageimg/earthimg.jpg">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">earth</a>
+      </div>
+    </div>
+    <div class="carousel-item blue white-text" href="#five!">
+      <img src="./assets/landingpageimg/moonimg.jpg">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fifth panel</p>
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">moon</a>
+      </div>
+    </div>
+    <div class="carousel-item blue white-text" href="#five!">
+      <img src="./assets/landingpageimg/marsimg.jpg">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fifth panel</p>
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">mars</a>
+      </div>
+    </div>
+    <div class="carousel-item blue white-text" href="#six!">
+      <img src="./assets/landingpageimg/jupimg.jpg">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your sixth panel</p>  
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">jupiter</a>
+      </div>
+    </div>
+    <div class="carousel-item blue white-text" href="#seven!">
+      <img src="./assets/landingpageimg/satimg.jpg">
+      <h2>Seventh Panel</h2>
+      <p class="white-text">This is your seventh panel</p>
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">saturn</a>
+      </div>
+    </div>
+    <div class="carousel-item green white-text" href="#eight!">
+      <img src="./assets/landingpageimg/uranusimg.jpg">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your eighth panel</p>
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">uranus</a>
+      </div>
+    </div>
+    <div class="carousel-item green white-text" href="#nine!">
+      <img src="./assets/landingpageimg/neptuneimg.jpg">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your nineth panel</p>
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">neptune</a>
+      </div>
+    </div>
+  </div>
+  
 
-</div> -->
-    <!-- Materialize JS CDN -->
-    <!-- <script type="text/javascript" src="./index.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
-    <script src="cities.js"></script>
-    <script src="config.js"></script>
-    <script src="satellite.js"></script>
-    <script src="./weather.js"></script>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./1alanding.js"></script>
+
 </body>
 </html>
