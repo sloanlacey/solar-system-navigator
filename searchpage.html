@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the Planets</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./searchpage.css">
+</head>
+<body>
+<!-- Nav bar -->
+<div class="navbar">
+    <nav class="nav-fixed">
+            <div class="nav-wrapper">
+              <a href="#!" class="brand-logo"><i class="material-icons" style="font-size: 50px; color: #f5f5f5;">language</i></a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color: #f5f5f5;">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a style="color: #f5f5f5;" href="#">Home</a></li>
+                <li><a style="color: #f5f5f5;" href="https://www.nasa.gov/">NASA</a></li>
+                <li><a style="color: #f5f5f5;" href="https://www.noaa.gov/">NOAA</a></li>
+              </ul>
+    </nav>
+</div>
+<!-- For collapsible/small screen drop down -->
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Home</a></li>
+    <li><a href="https://www.nasa.gov/">NASA</a></li>
+    <li><a href="https://www.noaa.gov/">NOAA</a></li>
+  </ul>
+</div>
+
+<!-- Main container -->
+   <div class="container" style="text-align: center;">
+       <div class="row">
+           <div class="col s2 m4 l4"></div>
+            <div class="col s8 m4 l4">
+                      <div class="card-panel" style="background-color: #078C8C; opacity: 0.9; margin-top: 75px;">
+                        <span style="color: #F2C185;">Type in a Planet Name to Start Exploring:</span>
+                        <input type="text" style="border: 1px solid #077F8C; border-radius: 15px; background-color: #f5f5f5; margin-top: 25px; color: #053959;">
+                        <a class="waves-effect waves-light btn-small" style="background-color: #D99F7E;">Go</a>
+                      </div>
+            <div class="col s2 m4 l4"></div>    
+            </div>
+       </div>
+   </div> 
+
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+   <!-- <script>
+       $(document).ready(function() {
+       $('.sidenav').sidenav();
+       });
+   </script>      -->
+   <script src="./cities.js"></script>
+   <script src="./config.js"></script>
+   <script src="./helper.js"></script>
+   <script src="./satellite.js"></script>
+   <script src="./weather.js"></script>  
+   <script src="./planetbuttons.js"></script>   
+   <script src="./jupiter.js"></script>    
+</body>
+</html>
