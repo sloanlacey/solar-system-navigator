@@ -9,3 +9,4 @@ $('.carousel.carousel-slider').carousel({
   $(document).ready(function() {
     $('.sidenav').sidenav();
     });
+
