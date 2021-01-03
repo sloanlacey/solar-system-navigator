@@ -23,21 +23,10 @@ function displayCityData(data) {
     return html;
 }
 
-// function renderToModal2(weatherEl) {
-//     console.log(weatherEl);
-//     const imageContainer = document.querySelector(".modal-content2 .weather-container");
-//     while (imageContainer.hasChildNodes()){
-//         imageContainer.removeChild(imageContainer.firstChild);
-//     }
-//     var temp = $(".weather-container").append(weatherEl);
-//     console.log(temp);
-//     $("#modal2").modal();
-//     $("#modal2").modal("open");
-// }
-
 document.getElementById("forecast-button").addEventListener("click", () => {
     const weatherInput = document.querySelector(".weather");
-    getCityData(weatherInput.value); 
+    getCityData(weatherInput.value);
+    renderToModal(getPreloader());
 })
         
 
