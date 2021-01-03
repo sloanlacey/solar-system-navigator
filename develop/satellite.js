@@ -4,6 +4,12 @@ function handleSatelliteImage404Error() {
     `);
 }
 
+function handleSatelliteImageOnload() {
+    const progress = document.querySelector(".modal-content .progress");
+    progress.parentNode.removeChild(progress);      
+    document.querySelector(".modal-content img").setAttribute("style", "display: block")
+}
+
 function createImgEl(source) {
     let html;
     if (!source) {
@@ -17,6 +23,8 @@ function createImgEl(source) {
                 width="400px"
                 height="400px"
                 onerror="handleSatelliteImage404Error()"
+                onload="handleSatelliteImageOnload()"
+                style="display: none"
                 src="${source}"
             />    
         `
@@ -45,6 +53,6 @@ document.getElementById("satellite-button").addEventListener("click", () => {
     const satelliteInput = document.querySelector(".satellite");
     
     const content = createSatelliteImage(satelliteInput.value);
-    renderToModal(content);
+    renderToModal(`${getPreloader()}${content}`);
 
 })
