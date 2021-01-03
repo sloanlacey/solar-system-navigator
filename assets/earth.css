@@ -3,32 +3,42 @@
 }
 
 body {
-    background-image: url('./assets/newbackground.jpg');
+    background-image: url('./images/newbackground.jpg');
 }
 
 .nav-fixed {
-    background-color: #A4A5A6;
+    background-color: #023059;
 }
 
-#moon-images {
+#earth-images {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
 .api-card {
-    background-color: #727273;
+    background-color: #025951;
 }
 
 #satellite-button {
-    margin-top: 15px;
-    background-color: #D9D9D9;
+    background-color: #020873;  
 }
 
-/* #weather-button {
-    background-color: #D9D9D9;
-} */
+#forecast-button {
+    background-color: #020873;
+}
+
+input {
+    border: 1px solid darkblue;
+}
 
 .planet-button {
     text-align: center;
 }
+
+
+
+
+
+
+
