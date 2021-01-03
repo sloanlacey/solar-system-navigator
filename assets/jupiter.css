@@ -3,33 +3,33 @@
 }
 
 body {
-    background-image: url('./assets/newbackground.jpg');
+    background-image: url('./images/newbackground.jpg');
 }
 
 .nav-fixed {
-    background-color: #A64B17;
+    background-color: #260801;
 }
 
-#venus-images {
+#jupiter-images {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
 .api-card {
-    background-color: #D98D30;
-    /* border: 1px solid #402222; */
+    background-color: #8C897B;
+    border: 1px solid #402222;
 }
 
-/* #mercury-api-button {
-    background-color: #736453;
-    color: #f5f5f5;
+#jupiter-api-button {
+    background-color: #8C4E03;
+    color: black;
     margin-top: 10px;
-} */
+}
 
 #wiki-button {
-    background-color: #8C8303;
-    color: #010326;
+    background-color: #8C4E03;
+    color: black;
     margin-top: 10px;
 }
 

@@ -3,21 +3,21 @@
 }
 
 body {
-    background-image: url('./assets/newbackground.jpg');
+    background-image: url('./images/newbackground.jpg');
 }
 
 .nav-fixed {
-    background-color: #324FA6;
+    background-color: #7698A6;
 }
 
-#neptune-images {
+#uranus-images {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
 .api-card {
-    background-color: #447EF2;
+    background-color: #CEF2F2;
     /* border: 1px solid #402222; */
 }
 
@@ -28,7 +28,7 @@ body {
 } */
 
 #wiki-button {
-    background-color: #202959;
+    background-color: #557073;
     color: #f5f5f5;
     margin-top: 10px;
 }
