@@ -8,6 +8,7 @@ body {
 
 .nav-fixed {
     background-color: #023059;
+    opacity: 0.85;
 }
 
 #earth-images {
@@ -18,6 +19,7 @@ body {
 
 .api-card {
     background-color: #025951;
+    opacity: 0.85;
 }
 
 #satellite-button {
