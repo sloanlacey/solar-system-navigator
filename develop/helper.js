@@ -8,7 +8,11 @@ function renderToModal(htmlEl, title="") {
     // content = title !== "" ? `<h4>${title}</h4>${htmlEl}`: htmlEl;
 
     $(`.modal-content`).html(content);
-    $(".modal").modal();
+    $(".modal").modal({
+        onCloseEnd: function() {
+            document.querySelector("body").setAttribute("style", "overflow: visible");
+        }
+    });
     $(".modal").modal("open");
 }
 
