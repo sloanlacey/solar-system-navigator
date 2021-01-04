@@ -1,3 +1,17 @@
+const planetNames = {
+    "sun": true,
+    "mercury": true,
+    "venus": true,
+    "earth": true,
+    "mars": true,
+    "jupiter": true,
+    "saturn": true,
+    "uranus": true,
+    "neptune": true,
+    "pluto": true,
+    "moon": true
+}
+
 function renderToModal(htmlEl, title="") {
     let content;
     if (title !== "") {
