@@ -8,6 +8,7 @@ body {
 
 .nav-fixed {
     background-color: #7698A6;
+    opacity: 0.85;
 }
 
 #uranus-images {
@@ -18,14 +19,8 @@ body {
 
 .api-card {
     background-color: #CEF2F2;
-    /* border: 1px solid #402222; */
+    opacity: 0.85;
 }
-
-/* #mercury-api-button {
-    background-color: #736453;
-    color: #f5f5f5;
-    margin-top: 10px;
-} */
 
 #wiki-button {
     background-color: #557073;
