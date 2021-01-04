@@ -8,6 +8,7 @@ body {
 
 .nav-fixed {
     background-color: #A62103;
+    opacity: 0.85;
 }
 
 #sun-images {
@@ -18,7 +19,7 @@ body {
 
 .api-card {
     background-color: #F2A20C;
-    /* border: 1px solid #402222; */
+    opacity: 0.85;
 }
 
 #jupiter-api-button {

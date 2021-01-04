@@ -8,6 +8,7 @@ body {
 
 .nav-fixed {
     background-color: #A4A5A6;
+    opacity: 0.8;
 }
 
 #moon-images {
@@ -18,16 +19,13 @@ body {
 
 .api-card {
     background-color: #727273;
+    opacity: 0.8;
 }
 
 #satellite-button {
     margin-top: 15px;
     background-color: #D9D9D9;
 }
-
-/* #weather-button {
-    background-color: #D9D9D9;
-} */
 
 .planet-button {
     text-align: center;
