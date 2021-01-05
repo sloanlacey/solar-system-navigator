@@ -37,11 +37,22 @@
             <div class="col s8 m4 l4">
                       <div class="card-panel" style="background-color: #078C8C; opacity: 0.9; margin-top: 75px;">
                         <span style="color: #F2C185;">Type in a Planet Name to Start Exploring:</span>
-                        <input type="text" style="border: 1px solid #077F8C; border-radius: 15px; background-color: #f5f5f5; margin-top: 25px; color: #053959;">
-                        <a class="waves-effect waves-light btn-small" style="background-color: #D99F7E;">Go</a>
+                        <input id="searchText" type="text" style="border: 1px solid #077F8C; border-radius: 15px; background-color: #f5f5f5; margin-top: 25px; color: #053959;">
+                        <a id="search" class="waves-effect waves-light btn-small" style="background-color: #D99F7E;">Go</a>
                       </div>
+                      <div class="errMsg" style="color:#e53935; font-size:18px; display: none">Error: Planet Not Found</div>
+            </div>        
             <div class="col s2 m4 l4"></div>    
+        </div>
+        <div class="row">
+            <div class="col s2 m4 l4"></div>
+            <div class="col s8 m4 l4">
+              <div class="planet-list collection">
+                <!-- <a href="./earth.html" class="collection-item">Earth</a> -->
+              </div>
             </div>
+            <div class="col s2 m4 l4"></div>
+        </div>
        </div>
    </div> 
 
@@ -49,17 +60,8 @@
    </script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
-   <!-- <script>
-       $(document).ready(function() {
-       $('.sidenav').sidenav();
-       });
-   </script>      -->
-   <script src="./develop/cities.js"></script>
-    <script src="./develop/config.js"></script>
-    <script src="./develop/helper.js"></script>
-    <script src="./develop/satellite.js"></script>
-    <script src="./develop/weather.js"></script>  
-    <script src="./develop/planetbuttons.js"></script> 
-    <script src="./develop/pluto.js"></script>   
+   
+   <script src="./develop/helper.js"></script>
+   <script src="./develop/searchPage.js"></script>
 </body>
 </html>
