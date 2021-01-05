@@ -11,3 +11,7 @@ body {
     background-color: #053959;
     opacity: 0.7;
 }
+
+.collection-item:hover {
+    background-color: #CCCCCC;
+}
