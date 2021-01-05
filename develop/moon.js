@@ -20,8 +20,8 @@ function constructMoonURL() {
 }
 
 function displayMoonResponse(response) {
-    var age = response.moon.age;
-    var illum = response.moon.illumination;
+    var age = (response.moon.age).toFixed(2);
+    var illum = (response.moon.illumination).toFixed(2);
     var stage = response.moon.stage;
     var html = `
             <h2>Today's Moon Info</h2>
