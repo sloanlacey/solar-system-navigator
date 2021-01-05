@@ -38,7 +38,7 @@ function constructSatelliteURL(city) {
     const position = cities[cityName];
     if (!position) return;
     
-    const url = `${endpoint}?lon=${position.lon}&lat=${position.lat}&dim=0.15&api_key=${config.nasaKey}`;
+    const url = `${endpoint}?lon=${position.lon}&lat=${position.lat}&dim=0.15&date=2018-07-25&api_key=${config.nasaKey}`;
     return url;
 }
 
