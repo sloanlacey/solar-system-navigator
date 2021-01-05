@@ -6,7 +6,6 @@
     <!-- Materialize CSS CDN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
     <link rel="stylesheet" type="text/css" href="./assets/neptune.css">    
     <title>Neptune</title>
 </head>
@@ -15,7 +14,7 @@
     <div class="navbar">
         <nav class="nav-fixed">
                 <div class="nav-wrapper">
-                  <a href="#!" class="brand-logo"><i class="material-icons" style="font-size: 50px; color: #0f0f09;">language</i></a>
+                  <a class="brand-logo"><i class="material-icons" style="font-size: 50px; color: #0f0f09;">language</i></a>
                   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color: #0f0f09;">menu</i></a>
                   <ul class="right hide-on-med-and-down">
                     <li><a style="color: #0f0f09;" href="./index.html">Home</a></li>
@@ -35,7 +34,7 @@
     </div>
  <!-- Main container starts here -->
 <div class="container">
-<!-- Top cards -->
+<!-- Top left card -->
     <div class="row">
         <div class="col s12 m12 l4">
             <div class="card" style="margin-top: 25px;">
@@ -52,11 +51,11 @@
                   </div>
             </div>
         </div>
-<!-- empty spacing column -->
+<!-- Top center Neptune image -->
         <div id="neptune-images" class="col s12 m12 l4">
           <img src="./assets/images/mainneptune.png">
         </div>
-
+<!-- Top right card -->
         <div class="col s12 m12 l4">
             <div class="card api-card" style="margin-top: 25px;">
                 <div class="card-content">
@@ -67,13 +66,11 @@
                   <li style="color: #0f0f09; list-style-type: circle;">Average distance from Earth: 2.7 billion miles</li>
                   <li style="color: #0f0f09; list-style-type: circle;">Average distance from the Sun: 2.8 billion miles</li>
                   </ul>
-                  <!-- Mars API button -->
-                  <!-- <a id="jupiter-api-button" class="waves-effect waves-light btn-small btn modal-trigger" href="#modal1">Sol Data</a> -->
                 </div>
               </div>
         </div>
     </div>
-<!-- Bottom cards -->
+<!-- Bottom left card -->
     <div class="row">
         <div class="col s12 m12 l4">
             <div class="card" style="margin-top: 25px;">
@@ -90,11 +87,11 @@
                   </div>
             </div>
         </div>
-<!-- Empty space column -->
+<!-- Bottom center image -->
         <div id="neptune-images" class="col s12 m12 l4">
           <img src="./assets/images/darkneptune.png">
         </div>
-
+<!-- Bottom right card -->
         <div class="col s12 m12 l4">
             <div class="card api-card" style="margin-top: 25px;">
                 <div class="card-content white-text">
@@ -105,7 +102,7 @@
                 </div>
               </div>
         </div>
-        
+<!-- Planet buttons -->
 <div class="row">
     <div class="col s4 m4 l4 planet-button">
         <input id="uranus-button" type="image" name="go-to-uranus" src="./assets/images/uranus-button.png" alt="Uranus Button" title="Go to Uranus" style="border: 1px solid black">
@@ -116,7 +113,7 @@
     </div>
     </div>      
 </div>
-
+<!-- Wiki API modal -->
 <div id="modal1" class="modal">
   <div class="modal-content">
     <div class="image-container"></div>
@@ -128,33 +125,13 @@
 
 </div>
 
-<!-- <div id="modal2" class="modal">
-  <div class="modal-content2">
-    <h4>Weather Forecast</h4>
-    <div class="weather-container"></div>
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Exit</a>
-  </div>
-</div> -->
-
 </div>
-    <!-- Materialize JS CDN -->
-    <!-- <script type="text/javascript" src="./index.js"></script> -->
+
+<!-- JS links and CDN's -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
-    <!-- <script>
-        $(document).ready(function() {
-        $('.sidenav').sidenav();
-        });
-    </script>      -->
-    <script src="./develop/cities.js"></script>
-    <script src="./develop/config.js"></script>
     <script src="./develop/helper.js"></script>
-    <script src="./develop/satellite.js"></script>
-    <script src="./develop/weather.js"></script>  
     <script src="./develop/planetbuttons.js"></script>   
     <script src="./develop/neptune.js"></script>   
 </body>

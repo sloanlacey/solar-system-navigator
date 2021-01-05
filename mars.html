@@ -6,7 +6,6 @@
     <!-- Materialize CSS CDN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
     <link rel="stylesheet" type="text/css" href="./assets/mars.css">    
     <title>Mars</title>
 </head>
@@ -15,7 +14,7 @@
     <div class="navbar">
         <nav class="nav-fixed">
                 <div class="nav-wrapper">
-                  <a href="#!" class="brand-logo"><i class="material-icons" style="font-size: 50px; color: #ffffe0;">language</i></a>
+                  <a class="brand-logo"><i class="material-icons" style="font-size: 50px; color: #ffffe0;">language</i></a>
                   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color: #ffffe0;">menu</i></a>
                   <ul class="right hide-on-med-and-down">
                     <li><a style="color: #ffffe0;" href="./index.html">Home</a></li>
@@ -35,7 +34,7 @@
     </div>
  <!-- Main container starts here -->
 <div class="container">
-<!-- Top cards -->
+<!-- Top left card -->
     <div class="row">
         <div class="col s12 m12 l4">
             <div class="card" style="margin-top: 25px;">
@@ -52,11 +51,11 @@
                   </div>
             </div>
         </div>
-<!-- empty spacing column -->
+<!-- top center mars image -->
         <div id="mars-images" class="col s12 m12 l4">
           <img src="./assets/images/mainmars.png">
         </div>
-
+<!-- Martian Sol API top right card -->
         <div class="col s12 m12 l4">
             <div class="card api-card" style="margin-top: 25px;">
                 <div class="card-content">
@@ -70,7 +69,7 @@
               </div>
         </div>
     </div>
-<!-- Bottom cards -->
+<!-- Bottom left card -->
     <div class="row">
         <div class="col s12 m12 l4">
             <div class="card" style="margin-top: 25px;">
@@ -87,11 +86,11 @@
                   </div>
             </div>
         </div>
-<!-- Empty space column -->
+<!-- Bottom center mars image -->
         <div id="mars-images" class="col s12 m12 l4">
           <img src="./assets/images/darkmars.png">
         </div>
-
+<!-- Bottom right card/Wiki API button -->
         <div class="col s12 m12 l4">
             <div class="card api-card" style="margin-top: 25px;">
                 <div class="card-content white-text">
@@ -103,7 +102,7 @@
               </div>
         </div>
 
-        
+<!-- Planet buttons -->
     <div class="row">
     <div class="col s4 m4 l4 planet-button">
       <input id="earth-button" type="image" name="go-to-earth" src="./assets/images/earth-button.png" alt="Go to Earth" title="Go to Earth" style="border: 1px solid black">
@@ -114,7 +113,7 @@
     </div>
     </div>      
 
-
+<!-- Modals -->
 <div id="modal1" class="modal">
   <div class="modal-content">
     <div class="image-container"></div>
@@ -126,33 +125,15 @@
 
 </div>
 
-<!-- <div id="modal2" class="modal">
-  <div class="modal-content2">
-    <h4>Weather Forecast</h4>
-    <div class="weather-container"></div>
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Exit</a>
-  </div>
-</div> -->
-
 </div>
-    <!-- Materialize JS CDN -->
-    <!-- <script type="text/javascript" src="./index.js"></script> -->
+
+    <!-- JS links and CDN'S -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
-    <!-- <script>
-        $(document).ready(function() {
-        $('.sidenav').sidenav();
-        });
-    </script>      -->
     <script src="./develop/cities.js"></script>
     <script src="./develop/config.js"></script>
     <script src="./develop/helper.js"></script>
-    <!-- <script src="./satellite.js"></script>
-    <script src="./weather.js"></script>   -->
     <script src="./develop/planetbuttons.js"></script> 
     <script src="./develop/mars.js"></script>  
 </body>
