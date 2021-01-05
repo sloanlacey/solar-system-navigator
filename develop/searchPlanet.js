@@ -67,8 +67,7 @@ const dropdownModifier = {
         }
         
         // Recalculate dropdown dimension
-        const elem = M.Dropdown.getInstance(document.getElementById("searchPlanet"));
-        elem.recalculateDimensions();
+        dropdownModifier.refresh();
 
         // Delete planet from local stroage
         dropdownModifier.deletePlanetEntry(planet);
@@ -87,10 +86,18 @@ const dropdownModifier = {
     },
     clearPlaceholder: function() {
         // Remove placeholder
-        const placeholderEl = document.querySelector(`.placeholder`);
+        const placeholderEl = document.querySelector(".placeholder");
         if (placeholderEl) {
             placeholderEl.parentNode.removeChild(placeholderEl);
         }
+    },
+    refresh: function() {
+        const elem = M.Dropdown.getInstance(document.querySelector(".dropdown-trigger"));
+        elem.recalculateDimensions();
+    },
+    showErr: function(bool) {
+        document.querySelector(".errMsg").style.display = bool ? "block" : "none";
+        dropdownModifier.refresh();
     },
     setup: function(planets) {
         // Setup dropdown
@@ -99,15 +106,13 @@ const dropdownModifier = {
             for (pl of planets){
                 dropdownModifier.addItem(pl)
             };
-        } else {
-            dropdownModifier.createPlaceholder();
         }
     }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
     // Initialize dropdown
-    var elem = document.getElementById("searchPlanet");
+    var elem = document.querySelector(".dropdown-trigger");
     M.Dropdown.init(elem, {
         coverTrigger: false,
         closeOnClick: false,
@@ -129,13 +134,13 @@ document.getElementById("searchBtn").addEventListener("click", function() {
 
     // Display Error Message ?
     if (!validName){
-        erroMsgDisplayed = "block";
+        dropdownModifier.showErr(true);
         return;
     }
-    errMsgDisplayed = "none";
+    dropdownModifier.showErr(false);
 
     // Update LocalStorage
-    dropdownModifier.addPlanetEntry(planet)
+    dropdownModifier.addPlanetEntry(planet);
 
     // Redirect to indicated planet page
     window.location = `./${planet}.html`;

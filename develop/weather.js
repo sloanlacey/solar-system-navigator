@@ -14,11 +14,15 @@ function displayCityData(data) {
     var city = data.name;
     var humid = data.main.humidity;
     var wind = data.wind.speed;
+    var feelsLike = data.main.feels_like;
+    var clouds = data.clouds.all;
     var html = `
             <h2>${city}</h2>
-            <p>temp: ${temp}&deg;F</p>
-            <p>humidity: ${humid}%</p>
-            <p>wind speed: ${wind}mph</p>
+            <p>Today's Temperature: ${temp}&deg;F</p>
+            <p>Feels Like: ${feelsLike}&deg;F</p>
+            <p>Humidity: ${humid}%</p>
+            <p>Wind Speed: ${wind}mph</p>
+            <p>Cloud Conditions: ${clouds}% cloud cover<p>
         `;
     return html;
 }
