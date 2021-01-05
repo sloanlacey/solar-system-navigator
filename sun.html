@@ -15,7 +15,7 @@
     <div class="navbar">
         <nav class="nav-fixed">
                 <div class="nav-wrapper">
-                  <a href="#!" class="brand-logo"><i class="material-icons" style="font-size: 50px; color: #010D00;">language</i></a>
+                  <a class="brand-logo"><i class="material-icons" style="font-size: 50px; color: #010D00;">language</i></a>
                   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color: #010D00;">menu</i></a>
                   <ul class="right hide-on-med-and-down">
                     <li><a style="color: #010D00;" href="./index.html">Home</a></li>
@@ -35,7 +35,7 @@
     </div>
  <!-- Main container starts here -->
 <div class="container">
-<!-- Top cards -->
+<!-- Top left card -->
     <div class="row">
         <div class="col s12 m12 l4">
             <div class="card" style="margin-top: 25px;">
@@ -52,11 +52,11 @@
                   </div>
             </div>
         </div>
-<!-- empty spacing column -->
+<!-- Top center sun image -->
         <div id="sun-images" class="col s12 m12 l4">
           <img src="./assets/images/mainsun.png">
         </div>
-
+<!-- Top right card -->
         <div class="col s12 m12 l4">
             <div class="card api-card" style="margin-top: 25px;">
                 <div class="card-content">
@@ -66,13 +66,11 @@
                   <li style="color:#010D00; list-style-type: circle;">Rotational Period: the sun rotates on its axis once every 27 days, and it orbits the Milky Way galaxy once every 250 million years</li>
                   <li style="color:#010D00; list-style-type: circle;">Average distance from Earth: 93 million miles</li>
                   </ul>
-                  <!-- Mars API button -->
-                  <!-- <a id="jupiter-api-button" class="waves-effect waves-light btn-small btn modal-trigger" href="#modal1">Sol Data</a> -->
                 </div>
               </div>
         </div>
     </div>
-<!-- Bottom cards -->
+<!-- Bottom left card -->
     <div class="row">
         <div class="col s12 m12 l4">
             <div class="card" style="margin-top: 25px;">
@@ -89,11 +87,11 @@
                   </div>
             </div>
         </div>
-<!-- Empty space column -->
+<!-- Bottom center eclipsed sun image -->
         <div id="sun-images" class="col s12 m12 l4">
           <img src="./assets/images/suneclipse.png">
         </div>
-
+<!-- Bottom right card/Wiki API button -->
         <div class="col s12 m12 l4">
             <div class="card api-card" style="margin-top: 25px;">
                 <div class="card-content white-text">
@@ -104,20 +102,19 @@
                 </div>
               </div>
         </div>
-        
+      <!-- Planet Buttons for Navigation -->
         <div class="row">
             <div class="col s4 m4 l4 planet-button">
               <input id="pluto-button" type="image" name="go-to-Pluto" src="./assets/images/pluto-button.png" alt="Pluto Button" title="Go to Pluto" style="border: 1px solid black">
             </div>
             <div class="col s4 m4 l4 planet-button">
-              <!-- <input id="earth-button" type="image" name="go-to-earth" src="./assets/earth-button.png" alt="Earth Button" title="Go to Earth" style="border: 1px solid black"> -->
             </div>
             <div class="col s4 m4 l4 planet-button">
               <input id="mercury-button" type="image" name="go-to-mercury" src="./assets/images/mercury-button.png" alt="Mercury Button" title="Go to Mercury" style="border: 1px solid black">
             </div>
           </div>
         </div>
-
+<!-- Modal driver -->
 <div id="modal1" class="modal">
   <div class="modal-content">
     <div class="image-container"></div>
@@ -126,36 +123,14 @@
   <div class="modal-footer">
     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Exit</a>
   </div>
-
 </div>
 
-<!-- <div id="modal2" class="modal">
-  <div class="modal-content2">
-    <h4>Weather Forecast</h4>
-    <div class="weather-container"></div>
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Exit</a>
-  </div>
-</div> -->
-
 </div>
-    <!-- Materialize JS CDN -->
-    <!-- <script type="text/javascript" src="./index.js"></script> -->
+    <!-- JS links and CDN's -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
-    <!-- <script>
-        $(document).ready(function() {
-        $('.sidenav').sidenav();
-        });
-    </script>      -->
-    <script src="./develop/cities.js"></script>
-    <script src="./develop/config.js"></script>
     <script src="./develop/helper.js"></script>
-    <script src="./develop/satellite.js"></script>
-    <script src="./develop/weather.js"></script>  
     <script src="./develop/planetbuttons.js"></script>
     <script src="./develop/sun.js"></script>      
 </body>

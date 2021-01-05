@@ -37,3 +37,9 @@ body {
 .planet-button {
     text-align: center;
 }
+
+/* @media (max-height : 800px){ from 0 to 800 px max height applies
+    p{
+      font-size:10px
+    }
+  } */
