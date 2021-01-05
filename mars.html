@@ -18,7 +18,7 @@
                   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color: #ffffe0;">menu</i></a>
                   <ul class="right hide-on-med-and-down">
                     <li><a style="color: #ffffe0;" href="./index.html">Home</a></li>
-                    <li><a style="color: #ffffe0;" href="./searchpage.html">Explore the Planets</a></li>
+                    <li><a class="dropdown-trigger" style="color: #ffffe0;" id="searchPlanet" data-target="planet-dropdown" href="./searchpage.html">Explore the Planets</a></li>
                     <li><a style="color: #ffffe0;" href="https://www.nasa.gov/">NASA</a></li>
                     <li><a style="color: #ffffe0;" href="https://www.noaa.gov/">NOAA</a></li>
                   </ul>
@@ -124,6 +124,16 @@
   </div>
 
 </div>
+<!-- Drop down menu nav bar -->
+<ul id="planet-dropdown" class="dropdown-content planet">
+  <li style="text-align: center;">
+    <input type="input" id="planetInput" style="width: 70%; font-size: 16px; border-color: #CCCCCC;"/>
+    <i class="material-icons" style="font-size: 16px; display:inline-flex;" id="searchBtn">search</i>
+    <p class="errMsg" style="color:#c62828; display: none">Error: Invalid Planet Name</p>
+  </li>
+  <li class="divider" tabindex="-1"></li>
+  <li class="placeholder" style="text-align: center;"><p style="color: #999999">No Search History Found</p></li>
+</ul>
 
 </div>
 
@@ -135,6 +145,7 @@
     <script src="./develop/config.js"></script>
     <script src="./develop/helper.js"></script>
     <script src="./develop/planetbuttons.js"></script> 
-    <script src="./develop/mars.js"></script>  
+    <script src="./develop/mars.js"></script> 
+    <script src="./develop/searchPlanet.js"></script>
 </body>
 </html>
